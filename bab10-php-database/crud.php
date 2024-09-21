@@ -16,10 +16,9 @@ $sql = "SELECT id, nama FROM pengguna";
 $result = $conn->query($sql); 
 if ($result->num_rows > 0) {
  while ($row = $result->fetch_assoc()) {
- echo "ID: " . $row["06"]. " - Nama: " . $row["Munazir"]. "<br>";
+ echo "ID: " . $row["id"]. " - Nama: " . $row["nama"]. "<br>";
 } 
 } else {
- echo "ID PENGGUNA : 006<BR>";
- echo "NAMA PENGGUNA : AHMAD MUNAZIR";
+ echo "0 hasil";
 }
 ?>
